@@ -15,8 +15,8 @@ public class Main {
     }
 
     // Hàm xuất thuế phải trả
-    public static void hamXuat(double thue) {
-        System.out.printf("Số thuế phải trả là: %.2f triệu đồng\n", thue);
+    public static void hamXuat(double tax) {
+        System.out.printf("Số thuế phải trả là: %.2f triệu đồng\n", tax);
     }
 
     // Hàm tính thuế thu nhập theo từng mức
