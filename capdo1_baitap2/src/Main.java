@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = hamNhap(); // Nhập mảng số nguyên từ bàn phím
+        int[] numbers = inputIntegerArray(); // Nhập mảng số nguyên từ bàn phím
         int secondLargest = findSecondLargest(numbers); // Tìm số lớn thứ hai
-        hamXuat(secondLargest); // Xuất kết quả
+        printOutput(secondLargest); // Xuất kết quả
     }
 
     // Nhập mảng số nguyên từ bàn phím
-    public static int[] hamNhap() {
+    public static int[] inputIntegerArray() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập các số nguyên, cách nhau bằng dấu cách: ");
         String input = scanner.nextLine();
@@ -27,10 +27,8 @@ public class Main {
     }
 
     // Xuất kết quả ra màn hình
-    public static void hamXuat(int result) {
-
-            System.out.println( result);
-
+    public static void printOutput(int result) {
+        System.out.println( result);
     }
 
     // Hàm tìm giá trị lớn thứ hai trong mảng
@@ -49,7 +47,6 @@ public class Main {
                 secondMax = num;
             }
         }
-
 
         return secondMax;
     }
