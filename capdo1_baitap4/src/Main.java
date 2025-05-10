@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         String input = hamNhap(); // Nhập chuỗi từ bàn phím
-        int wordCount = demSoTu(input); // Đếm số từ
+        int wordCount = demSoTuTrongChuoi(input); // Đếm số từ
         hamXuat(wordCount); // Xuất kết quả
     }
 
@@ -21,7 +21,7 @@ public class Main {
     }
 
     // Hàm đếm số từ trong chuỗi
-    public static int demSoTu(String str) {
+    public static int demSoTuTrongChuoi(String str) {
         str = str.trim(); // Bỏ khoảng trắng đầu và cuối chuỗi
         if (str.isEmpty()) return 0; // Chuỗi rỗng thì không có từ nào
         String[] words = str.split(" "); // Tách chuỗi theo khoảng trắng (1 hoặc nhiều)
