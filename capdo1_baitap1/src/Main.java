@@ -6,13 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
         // Nhập input
-        String input = hamNhap();
+        String input = inputString();
         // Gọi hàm xử lý và in kết quả
         String result = removeVowels(input);
         // Xuất kết quả
-        hamXuat(result);
+        printOutput(result);
     }
-    public static String hamNhap() {
+    public static String inputString() {
         Scanner scanner = new Scanner(System.in);
         // Nhập chuỗi từ bàn phím
         System.out.print("Nhập chuỗi: ");
@@ -20,7 +20,7 @@ public class Main {
         //scanner.close();
         return input;
     }
-    public static void  hamXuat(String result) {
+    public static void  printOutput(String result) {
         System.out.println("Chuỗi sau khi xóa nguyên âm: " + result);
     }
     // Hàm kiểm tra ký tự có phải nguyên âm không
